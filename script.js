@@ -1,6 +1,22 @@
-// Write your JavaScript code here!
+function orbit () {
+    const form = document.querySelector("launchForm");
+    const pilotName = document.getElementById("input[name=pilotName]");
+    const btn = document.getElementById("formSubmit")
 
-window.addEventListener("load", function() {
+
+    // window.addEventListener("load", function() {
+
+
+    btn.addEventListener("click", function() { //form validation
+    
+    if (pilotName.value === "" || pilotName.value === null || pilotName.value === undefined) {
+       alert("All fields are required!");
+    }
+    else {
+        alert("button pushed! congrats!")
+    }
+//  });
+
 
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
@@ -14,3 +30,5 @@ window.addEventListener("load", function() {
    })
    
 });
+}
+window.addEventListener("load", orbit);
