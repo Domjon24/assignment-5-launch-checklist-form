@@ -39,7 +39,7 @@ addEventListener("load", function() {
        cargoMass.innerHTML = `Cargo mass low enough for launch`;
  
  
-       if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "" ){
+       if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "" || pilotName.value === null || copilotName.value === null || fuelLevel.value === NaN || cargoMass.value === NaN){
           window.alert("All fields are required!");
           event.preventDefault();
           return;
