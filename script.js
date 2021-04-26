@@ -77,7 +77,6 @@ window.addEventListener("load" , function() {
             const missionTarget = document.getElementById('missionTarget');
             const index = Math.floor(Math.random() * json.length - 1);
             missionTarget.innerHTML = `
-            <h2>Mission Destination</h2>
             <ol>
             <li>Name: ${json[index].name}</li>
             <li>Diameter: ${json[index].diameter}</li>
