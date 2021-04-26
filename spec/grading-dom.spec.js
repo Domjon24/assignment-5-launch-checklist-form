@@ -28,9 +28,9 @@ describe ("GRADING DOM MANIPULATION TEST: ", function () {
 
       const dom = await JSDOM.fromFile(path.resolve(__dirname, "../index.html"), options).then(dom => window = dom.window);
 
-      let scriptElement = window.document.createElement("script");
-      scriptElement.textContent = script;
-      window.document.head.appendChild(scriptElement);
+      // let scriptElement = window.document.createElement("script");
+      // scriptElement.textContent = script;
+      // window.document.head.appendChild(scriptElement);
 
       await new Promise (resolve => {
         window.addEventListener('load', resolve);
