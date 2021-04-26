@@ -77,6 +77,7 @@ addEventListener("load", function() {
           return;
        }
  
+       
        else if (cargoMass.value > 10000) {
           status
     .style.color = "red";
